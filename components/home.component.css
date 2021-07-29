@@ -1,0 +1,105 @@
+.filters {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 350px;
+    padding-right: 20px;
+    
+  }
+.topic1,.topic2,.topic3,.topic4,.topic5,.topic6{
+  padding-right: 2%;
+  margin-right: 1%;
+  margin-top: 1%;
+  font-size: medium;
+  background-color: rgb(141, 216, 191);
+  border-radius: 5%;
+  padding-left: 2%;
+}
+.topic,.level,.language,.ratings{
+    padding-right: 2%;
+    font-weight: bold;
+    font-size: larger;
+}
+  
+  ::ng-deep 
+    .mat-form-field-infix {
+      background-color: lightgray;
+      
+    }
+  
+    .mat-select-value,
+    .mat-select-arrow,
+    .mat-form-field-hide-placeholder .mat-select-placeholder,
+    .mat-form-field-appearance-legacy .mat-form-field-label {
+      color: #fff !important;
+      opacity: 1;
+    }
+  
+    .mat-form-field-infix {
+      border-color: #fff !important;
+      border-top: none;
+      padding-left: 5px !important;
+    }
+  
+    .mat-form-field-appearance-legacy .mat-form-field-label {
+      padding-left: 5px;
+    }
+  
+    .mat-form-field-appearance-legacy .mat-form-field-underline {
+      background-color: #fff !important;
+    }
+    .courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 20px auto;
+      }
+    
+    .course {
+        width: 280px;
+        margin: 10px;
+        height: 330px;
+        overflow: hidden;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 4px 3px 8px 0px #000;
+        transition-duration: 0.3s;
+        cursor: pointer;
+   }
+    .course:hover {
+        box-shadow: 4px 3px 11px 6px #000;
+        transform: translateY(-3px);
+   }
+    .course-thumb-container {
+        background-color: #000;
+        position: relative;
+        height: 172px;
+        color: #fff;
+        text-align: center;
+   }
+    .course-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 172px;
+   }
+    .course-description {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 150px;
+        background-color:white;
+   }
+    .course-name {
+        color:rgb(1, 46, 46);
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+   }
+    

@@ -1,0 +1,80 @@
+<div class="topicbutton">
+<button class="topic1" (click)="getTopicCourses('HTML')">HTML</button>
+<button  class="topic2" (click)="getTopicCourses('CSS')">CSS</button >
+<button  class="topic3" (click)="getTopicCourses('Angular Js')">Angular Js</button >
+<button  class="topic4" (click)="getTopicCourses('MVC')">MVC</button >
+<button  class="topic5" (click)="getTopicCourses('Bootstrap')">Bootstrap</button >
+<button  class="topic6" (click)="getTopicCourses('MEAN Stack')">MEAN Stack</button >
+</div>
+
+<div class="filters">
+    <!-- <mat-form-field class="topic">
+        
+      <mat-label>Select Topic</mat-label>
+      <mat-select
+        panelClass="topics-select"
+        [(ngModel)]="topics" >
+        <button value="topic1">HTML</button>
+        <mat-option value="topic2">CSS</mat-option>
+        <mat-option value="topic3">Angular Js</mat-option>
+        <mat-option value="topic4">MVC</mat-option>
+        <mat-option value="topic5">Bootstrap</mat-option>
+        <mat-option value="topic6">MEAN Stack</mat-option>
+        
+      </mat-select>
+    </mat-form-field> -->
+
+    <mat-form-field class="level">
+        <mat-label>Select Level</mat-label>
+        <mat-select
+          panelClass="levels-select"
+          [(ngModel)]="levels">
+          <mat-option value="level1"(click)="expertise('Beginner')" >Beginner</mat-option>
+          <mat-option value="level2" (click)="expertise('Intermediate')">Intermediate</mat-option>
+          <mat-option value="level3" (click)="expertise('Expert')">Expert</mat-option>    
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="language">
+        <mat-label>Select Language</mat-label>
+        <mat-select
+          panelClass="languages-select"
+          [(ngModel)]="languages">
+          <mat-option value="lang1"(click)="language('English')">English</mat-option>
+          <mat-option value="lang2" (click)="language('Urdu')">Urdu</mat-option>
+          <mat-option value="lang3" (click)="language('French')">French</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="ratings">
+        <mat-label>Select Ratings</mat-label>
+        <mat-select
+          panelClass="ratings-select"
+          [(ngModel)]="ratings">
+          <mat-option value="rating1" (click)="rating('1')">1</mat-option>
+          <mat-option value="rating2" (click)="rating('2')">2</mat-option>
+          <mat-option value="rating3" (click)="rating('3')">3</mat-option>
+          <mat-option value="rating4" (click)="rating('4')">4</mat-option>
+          <mat-option value="rating5" (click)="rating('5')">5</mat-option>
+        </mat-select>
+      </mat-form-field>
+  </div>
+  
+  <div class="courses">  
+    <ng-container *ngFor="let course of courses">
+      <div class="course" (click)="showCourseDescription(course.id)">
+        <div class="course-thumb-container">
+          <img *ngIf="course.image"src="{{course.image}}" alt="thumbnail" class="course-thumbnail"
+          />
+          <p *ngIf="!course.image">No image</p>
+        </div>
+        <div class="course-description">
+          <p class="course-name">{{course.title}}</p>
+          <p >{{course.instructor}}</p>
+          <p >{{course.price}}</p>
+        </div>
+      </div> 
+    </ng-container> 
+  </div>
+
+  

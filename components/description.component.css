@@ -1,0 +1,24 @@
+.course-title{
+    text-align: center;
+      position: relative;
+      top: -30px;
+      font-weight: bolder;
+      font-size: 30px;
+      color: rgb(76, 109, 109);
+}
+.course-topic{
+    text-align: center;
+      position: relative;
+      top: -50px;
+      font-weight: bolder;
+      font-size: 30px;
+      color: rgb(27, 46, 46);
+}
+.course-instructor,.course-language,.course-price,.course-outline,.course-discountinfo{
+    text-align: left;
+    margin-left: 35px;
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(190, 216, 207);
+}
