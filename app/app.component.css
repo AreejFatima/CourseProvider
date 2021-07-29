@@ -1,0 +1,22 @@
+.headerContainer{
+  max-width:100%;
+  overflow: auto;
+  min-height:200px;
+  overflow: hidden;
+  background-color:#128b86;
+  border: 1px solid black;
+  margin-top: -20px;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+.headerContainer p{
+    font-size: 50px;
+    margin-top: 10px;
+    color: floralwhite;
+    font-family: cursive;
+    
+}
+.container{
+  background-color:rgb(10, 10, 46);
+}
